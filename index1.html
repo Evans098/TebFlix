@@ -1,0 +1,105 @@
+<!-- Página de inicio sin suscripción -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TebFlix - Plataforma dedicada al mundo de los cómics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|PT+Sans" rel="stylesheet">
+    <!--fuente-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div id="titulo">
+            <h1 class="titulos"><a class="titulos" href="#">TebFlix</a></h1>
+            <h2 class="titulos">Tu Netfix de comics</h2>
+            <div id="redes">
+                <a href="https://es-es.facebook.com/" target="_blank"> <img src="./img/facebookblanco32.png" id="facebook"> </a>
+                <a href="https://www.youtube.com/" target="_blank"> <img src="./img/youtubeblanco32.png" id="youtube"> </a>
+                <a href="https://twitter.com/?lang=es/" target="_blank"> <img src="./img/twitterblanco32.png" id="twitter"> </a>
+                <a href="https://www.instagram.com/?hl=es/" target="_blank"> <img src="./img/instagramblanco32.png" id="instagram"> </a>
+            </div>
+            <input type="button" value="Iniciar sesión" id="inisesion">
+        </div>
+    </header>
+
+    <!-- Menú -->
+    <nav id="menu">
+        <ul id="menu1" class="nav">
+            <li> <a href="#"> Inicio </a></li>
+            <li id="sub1"> <a> Categorías </a>
+                <ul id="sub11">
+                    <li href="" id="subini">
+                        <a href=""></a> > Acción </a>
+                    </li>
+                    <li href=""> <a href=""> > Ciencia Ficción </a></li>
+                    <li href=""> <a href=""> > Detectives </a></li>
+                    <li href=""> <a href=""> > Fantasía </a></li>
+                </ul>
+            </li>
+            <li href=""> <a href=""> Noticias </a></li>
+            <li href=""> <a href=""> Mejores comics del mes </a></li>
+            <li id="final" href=""> <a href=""> Conócenos </a></li>
+        </ul>
+    </nav>
+
+    <!-- Introducción -->
+    <div id="contenidol">
+
+        <section>
+
+            <span id="title-pdf"></span>
+            <nav class=nav1>
+                <ul class="imgs">
+                    <li><a href="#" data="avengers_3" onclick="llamadaComics()">accion</a>
+                        <ul class="pdfs">
+                            <li><a href="#" data="ejemplo_esp" onclick="llamadaPdfs()">wuolah-free-tema 5 redes</a></li>
+                            <li><a href="#" data="pdf_ejemplo4" onclick="llamadaPdfs()">memoria</a></li>
+                        </ul>
+                    </li>
+                    <li>Ciencia ficcion
+                        <ul class="pdfs">
+                            <li><a href="#" data="ejemplo_esp" onclick="llamadaPdfs()">wuolah-free-tema 5 redes</a></li>
+                            <li><a href="#" data="pdf_ejemplo4" onclick="llamadaPdfs()">memoria</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+            <div id="margen">
+                <a href="#">
+                    <div id="imgD">
+                    </div>
+                </a>
+            </div>
+            <embed id="pdf" height="100%" width="100%" name="embed_content" type="application/pdf" />
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="pie">
+        <div>
+            <a href="https://es-es.facebook.com/" target="_blank"> <img src="./img/facebookblanco32.png" id="facebook"> </a>
+            <a href="https://www.youtube.com/" target="_blank"> <img src="./img/youtubeblanco32.png" id="youtube"> </a>
+            <a href="https://twitter.com/?lang=es/" target="_blank"> <img src="./img/twitterblanco32.png" id="twitter"> </a>
+            <a href="https://www.instagram.com/?hl=es/" target="_blank"> <img src="./img/instagramblanco32.png" id="instagram"> </a>
+        </div>
+        <ul>
+            <li><a class="enl" href="#">Privacidad.</a></li>
+            <li><a class="enl" href="#">Términos y condiciones.</a></li>
+        </ul>
+        <p id="copy">Copyright 2019 ©. TebFlix.</p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
