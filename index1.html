@@ -57,26 +57,40 @@
             <span id="title-pdf"></span>
             <nav class=nav1>
                 <ul class="imgs">
-                    <li><a href="#" data="avengers_3" onclick="llamadaComics()">accion</a>
+                    <li onclick="mostrarLista(this)" data-lista="accion"><a href="#" >accion</a>
                         <ul class="pdfs">
-                            <li><a href="#" data="ejemplo_esp" onclick="llamadaPdfs()">wuolah-free-tema 5 redes</a></li>
-                            <li><a href="#" data="pdf_ejemplo4" onclick="llamadaPdfs()">memoria</a></li>
+                            <!-- <li><a href="#"  onclick="mostrame(this)">wuolah-free-tema 5 redes</a></li>
+                            <li><a href="#"  onclick="mostrame(this)">memoria</a></li> -->
                         </ul>
                     </li>
-                    <li>Ciencia ficcion
+                    <li onclick="mostrarLista(this)" data-lista="ciencia">Ciencia ficcion
                         <ul class="pdfs">
-                            <li><a href="#" data="ejemplo_esp" onclick="llamadaPdfs()">wuolah-free-tema 5 redes</a></li>
-                            <li><a href="#" data="pdf_ejemplo4" onclick="llamadaPdfs()">memoria</a></li>
+                            <!-- <li><a href="#" data="ejemplo_esp" onclick="llamadaPdfs()">wuolah-free-tema 5 redes</a></li>
+                            <li><a href="#" data="pdf_ejemplo4" onclick="llamadaPdfs()">memoria</a></li> -->
                         </ul>
                     </li>
                 </ul>
 
             </nav>
             <div id="margen">
-                <a href="#">
-                    <div id="imgD">
+                <div id="imgD">
+                    <div class="lista accion">
+                        <div class="comic">
+                            <img src="imagenes/avengers_3.jpg" data-pdf="ejemplo_esp"/>
+                        </div>
+                        <div class="comic">
+                            <img src="imagenes/avengers_3.jpg" data-pdf="pdf_ejemplo4"/>
+                        </div>
                     </div>
-                </a>
+                    <div class="lista ciencia">
+                            <div class="comic">
+                                <img src="imagenes/baby_groot.jpg" data-pdf="ejemplo_esp"/>
+                            </div>
+                            <div class="comic">
+                                <img src="imagenes/baby_groot.jpg" data-pdf="pdf_ejemplo4"/>
+                            </div>
+                        </div>
+                </div>
             </div>
             <embed id="pdf" height="100%" width="100%" name="embed_content" type="application/pdf" />
 

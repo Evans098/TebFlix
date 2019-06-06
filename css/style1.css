@@ -157,6 +157,14 @@ h2 {
     border-top: none;
 }
 
+.lista {
+    display: none;
+}
+
+.accion {
+    display: flex;
+}
+
 
 /*Contenido pdf*/
 
@@ -190,10 +198,7 @@ h2 {
     width: 300px;
 }
 
-#margen {
-    height: 400px;
-    width: 300px;
-}
+
 
 #contenidol {
     background-color: black;
@@ -210,6 +215,33 @@ h2 {
     font-size: 2pc;
     display: flex;
     justify-content: center;
+}
+
+#margen {
+    padding: 1pc 0;
+    margin: 0 1pc;
+    width: 100%;
+}
+
+#imgD {
+    width: 90%;
+}
+
+
+.lista {
+    width: 100%;
+    height: 400px;
+    flex-direction: row;
+}
+
+.lista .comic {
+    
+    width: 30%;
+}
+
+.lista .comic img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -382,3 +414,4 @@ footer ul li {
     text-decoration: none;
     color: #737373;
 }
+
