@@ -1,4 +1,3 @@
-
 //Funcion que realiza la visualización
 /**
  * 
@@ -8,36 +7,38 @@ function mostrame(pdf) {
 
     var pdfAMostrar = pdf;
     var lista = document.querySelectorAll('.lista');
-    lista.forEach(function(e){
-        console.log("paso4")
+    $("#pdf").hide(0, cambio2);
+    lista.forEach(function(e) {
+
         e.style.display = 'none';
     })
-    
-    var embed = document.getElementById("pdf");//obtiene por id
-    embed.setAttribute("src", "comics/");//establece un atributo
-    var src = embed.getAttribute("src");//obtiene atributo src
-    var data = pdfAMostrar.getAttribute("data-pdf");//obtencion de los datos que contiene ese atributo
-    embed.setAttribute("src", src + data + ".pdf");//establece un nuevo atributo concatenanto los datosy mostrar el pdf
-    console.log("Creo los atributos del pdf");
-    
+
+    var embed = document.getElementById("pdf"); //obtiene por id
+    embed.setAttribute("src", "comics/"); //establece un atributo
+    var src = embed.getAttribute("src"); //obtiene atributo src
+    var data = pdfAMostrar.getAttribute("data-pdf"); //obtencion de los datos que contiene ese atributo
+    embed.setAttribute("src", src + data + ".pdf"); //establece un nuevo atributo concatenanto los datosy mostrar el pdf
+
+
 }
 
 
 //mostrar lista de comics en imagenes
-function mostrarLista (dataLista){
+function mostrarLista(dataLista) {
     var lista = document.querySelectorAll('.lista');
-    lista.forEach(function(e){
-        console.log(" paso 2")
+    $(".img2").hide(0, cambio1);
+    lista.forEach(function(e) {
+
         e.style.display = 'none';
-    
-        
+
+
     })
-    
+
     var actual = document.getElementsByClassName(dataLista.getAttribute('data-lista'))[0];
-    console.log(actual+" paso3")
+
     actual.style.display = 'flex';
     var embed = document.getElementById("pdf");
-    embed.setAttribute('src',null);//El atributo src se cambia null para ocultar el pdf 
+    embed.setAttribute('src', null); //El atributo src se cambia null para ocultar el pdf 
 }
 
 
@@ -59,41 +60,34 @@ function mostrarLista (dataLista){
 //     })
 // }
 
-// function eliminarComics() {
-//     imagen = document.getElementById("margen");
-//     padre = imagen.parentNode;
-//     padre.removeChild(imagen);
-
-// }
-
-// function eliminarPdfs() {
-//     imagen = document.getElementById("pdf");
-//     padre = imagen.parentNode;
-//     padre.removeChild(imagen);
-
-// }
-
-
-
-
-
 
 
 //mostrar los pdf una vez que se pulse en las imagenes
-window.addEventListener('load', function(){
-    
-    console.log("mec_inicial")
+//carga la ventana y empieza la ejecucion
+window.addEventListener('load', function() {
     // Recoge todas los nodos imagenes de clases .comic
     var imgs = document.querySelectorAll(".lista .comic img");
-    console.log(imgs+" antes del foreach de lso pdfs");
+    $(".img2").hide(0, cambio1);
     imgs.forEach(function(e) {
         e.addEventListener("click", function(a) {
-            console.log("entro en el foreach inicial")
+
             mostrame(e);
-            
+
         });
 
     })
-    this.console.log("No entro en el foreach de los pdfs");
-    
+
+
 });
+
+function cambio1() {
+    $(".img2").fadeIn(500);
+
+
+}
+
+function cambio2() {
+    $(".img2").show(1000);
+
+
+}
