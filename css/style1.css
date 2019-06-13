@@ -177,7 +177,8 @@ h2 {
     display: none;
 }
 
-.nav1>ul>li {
+
+/* .nav1>ul>li {
     cursor: pointer;
     display: inline-flex;
     padding: 0 0;
@@ -185,13 +186,34 @@ h2 {
     width: 8pc;
     justify-content: center;
     position: relative;
-}
+} */
+
+
 
 #img {
     padding: 10px;
     padding-left: 10px;
     height: 400px;
     width: 300px;
+}
+
+.categoria {
+    transform: rotate(10deg) skew(170deg,170deg);
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 0;
+    background-color: rgb(253, 100, 100);
+    width: 8pc;
+    justify-content: center;
+    position: relative;
+    padding: 5px 2px;
+    transition: transform ease-in 100ms;
+}
+/*al pasar el cursor por las opciones hace el efecto de pulsar*/
+.categoria:hover {
+    background: rgb(231, 42, 42);
+    transform: translate(-1%,-5%) rotate(10deg) skew(170deg,170deg);
 }
 
 #contenidol {

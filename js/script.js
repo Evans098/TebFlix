@@ -18,7 +18,7 @@ function mostrame(pdf) {
     var src = embed.getAttribute("src"); //obtiene atributo src
     var data = pdfAMostrar.getAttribute("data-pdf"); //obtencion de los datos que contiene ese atributo
     embed.setAttribute("src", src + data + ".pdf"); //establece un nuevo atributo concatenanto los datosy mostrar el pdf
-
+    embed.style.display = 'inline-flex' ;
 
 }
 
@@ -38,7 +38,8 @@ function mostrarLista(dataLista) {
 
     actual.style.display = 'flex';
     var embed = document.getElementById("pdf");
-    embed.setAttribute('src', null); //El atributo src se cambia null para ocultar el pdf 
+    embed.setAttribute('src', null); //El atributo src se cambia null para ocultar el pdf
+    embed.style.display = 'none' ;
 }
 
 
