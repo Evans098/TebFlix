@@ -188,8 +188,6 @@ h2 {
     position: relative;
 } */
 
-
-
 #img {
     padding: 10px;
     padding-left: 10px;
@@ -198,7 +196,7 @@ h2 {
 }
 
 .categoria {
-    transform: rotate(10deg) skew(170deg,170deg);
+    transform: rotate(10deg) skew(170deg, 170deg);
     margin: 0 5px;
     cursor: pointer;
     display: inline-flex;
@@ -210,10 +208,13 @@ h2 {
     padding: 5px 2px;
     transition: transform ease-in 100ms;
 }
+
+
 /*al pasar el cursor por las opciones hace el efecto de pulsar*/
+
 .categoria:hover {
     background: rgb(231, 42, 42);
-    transform: translate(-1%,-5%) rotate(10deg) skew(170deg,170deg);
+    transform: translate(-1%, -5%) rotate(10deg) skew(170deg, 170deg);
 }
 
 #contenidol {
@@ -221,6 +222,7 @@ h2 {
     color: white;
     padding: 2pc 0;
     height: 50pc;
+    text-align: center;
 }
 
 #contenidol>section {
@@ -254,7 +256,7 @@ h2 {
 }
 
 .lista {
-    width: 100%;
+    width: 50pc;
     height: 400px;
     flex-direction: row;
 }
@@ -439,4 +441,17 @@ footer ul li {
 .enl {
     text-decoration: none;
     color: #737373;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        background-color: #6F0B0B;
+    }
+    .nav1 {
+        display: none;
+        background-image: url('img/menúNegro.png');
+    }
+    .img2 {
+        width: 100%;
+    }
 }
